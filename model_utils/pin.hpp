@@ -24,6 +24,8 @@ namespace vsm
 
         operator bool() const;
 
+        IDSIMPIN2 *operator->() noexcept;
+
         ~pin() = default;
     };
 }

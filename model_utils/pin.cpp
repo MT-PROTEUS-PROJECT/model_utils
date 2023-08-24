@@ -36,4 +36,9 @@ namespace vsm
     {
         return _pin->isactive();
     }
+
+    IDSIMPIN2 *pin::operator->() noexcept
+    {
+        return _pin;
+    }
 }
